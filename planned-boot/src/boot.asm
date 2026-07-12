@@ -62,7 +62,7 @@ dap:                        ; Disk Address Packet for int 13h, ah=0x42
     dq KERNEL_START_LBA
 
 boot_drive: db 0
-err_msg: db 'Disk read failed!', 0
+err_msg: db 'Critical Error: Boot Drive Missing', 0
 
 load_PM:
     cli
